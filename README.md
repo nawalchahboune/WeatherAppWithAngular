@@ -1,27 +1,54 @@
-# MeteoProjectWebSemantique
+****WeatherAppWithAngular****
+****Description****
+Ce projet est une application météo développée avec Angular. Elle utilise Bootstrap pour le design et GraphDB pour exécuter les requêtes et récupérer les réponses.
+Le projet inclut un endpoint nommé /test2 conformément au dépôt test2. dans le projet sous services : le service GraphdbService contient la variable : graphDBEndpoint= '/test2'.
+test2 correspond bien au nom de mon dépot sur graphDB, vous le changez en l'adaptant avec le nom de votre dépot.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
-## Development server
+****Prérequis****
+Avant de commencer, assurez-vous que les outils suivants sont installés :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Node.js (v16.x ou plus récent) : Télécharger Node.js**
+**npm (livré avec Node.js) ou yarn**
+**Angular CLI : Installez-le globalement en exécutant :**
+sur bash
+npm install -g @angular/cli
 
-## Code scaffolding
+GraphDB : Assurez-vous d'avoir accès à une instance fonctionnelle de GraphDB et ses informations de connexion.
+voici le lien pour installer graphDB : https://www.ontotext.com/products/ontotext-refine/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+****Installation****
 
-## Build
+**1. Cloner le dépôt**
+Clonez le projet depuis GitHub :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+sur bash
+git clone https://github.com/nawalchahboune/WeatherAppWithAngular.git
+cd WeatherAppWithAngular
 
-## Running unit tests
+**2. Installer les dépendances**
+Installez les dépendances nécessaires pour le projet :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+sur bash
+npm install
+**3. Installer Bootstrap**
+Bootstrap est déjà inclus dans les dépendances du projet. Si ce n'est pas le cas, installez-le en exécutant :
 
-## Running end-to-end tests
+sur bash
+npm install bootstrap
+Ensuite, ajoutez Bootstrap dans le fichier angular.json :
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+"styles": [
+    "src/styles.css",
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+"scripts": [
+    "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+après exécuter le projet avec les commandes : 
+  -**ng serve
+  -npm start**
+
+
