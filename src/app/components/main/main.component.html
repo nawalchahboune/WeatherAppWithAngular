@@ -1,0 +1,271 @@
+<!-- <div class="weather-container">
+  <h1>Météo - Station ID:
+
+  <select (change)="onCategoryChange($event)" style="width: 100px" [(ngModel)]="selectedId">
+    <option *ngFor="let id of stationIds" [value]="id">{{ id }}</option>
+  </select>
+  </h1>
+
+
+
+  <div class="weather-columns">
+    <div class="weather-column">
+      <ul>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/temperature-moyenne.jpg" alt="Température haute" />
+            <p><strong>Température moyenne : </strong> {{ data.temperatureAvr }} °C</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/Temperature-maximale.png" alt="Température maximale" />
+            <p><strong>Température maximale :</strong>{{data.temperatureMax}} °C</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/temperature minimale.png" alt="Température basse" />
+            <p><strong>Température minimale :</strong> {{data.temperatureMin}}°C</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="weather-column">
+      <ul>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/humidite.png" alt="Température basse" />
+            <p><strong>Humidité :</strong> {{data.Humidity}} g/m^3</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/press.jpg" alt="Température basse" />
+            <p><strong>Pression moyenne :</strong>{{data.SpeedWindAvr}} °C</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/directionVnet.png" alt="Température basse" />
+            <p><strong>Direction du vent :</strong> {{data.DirectionWind}}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="weather-column">
+      <ul>
+
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>Vitesse du vent moyenne :</strong> {{data.SpeedWindAvr}} m/s</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>Vitesse du vent minimale :</strong> {{data.SpeedWindMin}} m/s</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>Vitesse du vent maximale :</strong>  {{data.SpeedWindMax}} m/s</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="weather-column">
+      <ul>
+
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>Cloudiness :</strong> {{data.SpeedWindAvr}} m/s</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>Gust :</strong> {{data.avgGust}}</p>
+          </div>
+        </li>
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>Soil status :</strong>  {{data.soilStatus}}%</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="weather-column">
+      <ul>
+
+        <li>
+          <div class="weather-item">
+            <img src="assets/icons/vitesseVent.png" alt="Température basse" />
+            <p><strong>snow height :</strong> {{data.snowHeight}} m</p>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+    <div class="neu-container">
+        <div class="neu-form-group">
+            <label for="stationSelect" class="neu-label"><strong>Station:</strong> </label>
+            <select id="stationSelect" class="neu-form-control" (change)="onCategoryChange($event)" style="width: 100px" [(ngModel)]="selectedId">
+              <option *ngFor="let id of stationIds" [value]="id">{{ id }}</option>
+            </select>
+           
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center px-2">
+        <div class="col-3">
+            <div class="card text-body shadow-sm" style="border-radius: 20px; background-color: #f9f9f9;">
+                <div class="card-body p-4">
+                    <div class="d-flex mb-3">
+                        <h6 class="flex-grow-1 fw-bold" style="font-size: 1.1rem; color: #333;">Température</h6>
+                    </div>
+
+                    <!-- Première ligne -->
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/temperature-high.svg" alt="Temperature" style="width: 40px; height: auto;">
+                        <div class="ms-3">
+                          <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.temperatureMax}} °C</p>
+                            <span class="small text-muted">Max</span>
+                        </div>
+                    </div>
+
+                    <!-- Deuxième ligne -->
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/temperature-medium.svg" alt="Temperature" style="width: 40px; height: auto;">
+                        <div class="ms-3">
+                            <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.temperatureAvr}} °C</p>
+                            <span class="small text-muted">Moyenne</span>
+                        </div>
+                    </div>
+
+                    <!-- Troisième ligne -->
+                    <div class="d-flex align-items-center">
+                        <img src="assets/temperature-low.svg" alt="Temperature" style="width: 40px; height: auto;">
+                        <div class="ms-3">
+                            <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.temperatureMin}} °C</p>
+                            <span class="small text-muted">Min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card text-body shadow-sm" style="border-radius: 20px; background-color: #f9f9f9;">
+                <div class="card-body p-4">
+                    <div class="d-flex mb-3">
+                        <h6 class="flex-grow-1 fw-bold" style="font-size: 1.1rem; color: #333;">Vent</h6>
+                    </div>
+
+                    <!-- Contenu divisé en deux colonnes -->
+                    <div class="row">
+                        <!-- Colonne gauche : Vitesse du vent -->
+                        <div class="col-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="assets/wind-high.svg" alt="Vitesse du vent max" style="width: 40px; height: auto;">
+                                <div class="ms-3">
+                                    <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.SpeedWindMax}} m/s</p>
+                                    <span class="small text-muted">Max</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="assets/wind-medium.svg" alt="Vitesse du vent moyenne"
+                                    style="width: 40px; height: auto;">
+                                <div class="ms-3">
+                                    <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.SpeedWindAvr}} m/s</p>
+                                    <span class="small text-muted">Moyenne</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/wind-low.svg" alt="Vitesse du vent min" style="width: 40px; height: auto;">
+                                <div class="ms-3">
+                                    <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.SpeedWindMin}} m/s</p>
+                                    <span class="small text-muted">Min</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Barre de séparation -->
+                        <div class="col-1 d-flex justify-content-center">
+                            <div style="width: 2px; background-color: #ddd; height: 100%;"></div>
+                        </div>
+
+                        <!-- Colonne droite : Direction et Gust -->
+                        <div class="col-6 d-flex flex-column align-items-center">
+                            <!-- Direction du vent -->
+                            <img src="assets/wind-direction.png" alt="Direction du vent"
+                                style="width: 40px; height: auto; margin-bottom: 10px;">
+                            <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #333;">Direction : {{data.DirectionWind}}</p>
+
+                            <!-- Rafales -->
+                            <div class="mt-3">
+                                <img src="assets/strength.png" alt="Rafales"
+                                    style="width: 40px; height: auto; margin-bottom: 5px;">
+                                <p class="mb-0 fw-bold" style="font-size: 1.2rem; color: #222;">{{data.avgGust}} </p>
+                                <span class="small text-muted">Rafales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center mt-5">
+        <div class="col-2">
+            <img src="assets/humidity.png" alt="humidity" style="width: 60px; height: auto; margin-bottom: 5px;">
+            <p class="fw-bold" style="font-size: 1.2rem; color: #333;">
+                Humidité <br>
+                <span>{{data.Humidity}} g/m<sup>3</sup></span>
+            </p>
+        </div>
+
+        <div class="col-2">
+            <img src="assets/cloudy.png" alt="Humidité" style="width: 60px; height: auto; margin-bottom: 5px;">
+            <p class="fw-bold" style="font-size: 1.2rem; color: #333;">
+                Nébulosité <br>
+                <span>{{data.avgCloudiness}} octas</span>
+            </p>
+        </div>
+
+        <div class="col-3">
+            <img src="assets/snow.svg" alt="Volume" style="width: 60px; height: auto; margin-bottom: 5px;">
+            <p class="fw-bold" style="font-size: 1.2rem; color: #333;">
+                Hauteur de neige <br>
+                <span>{{data.snowHeight}} m</span>
+            </p>
+        </div>
+        <div class="col-3">
+            <img src="assets/pressure.png" alt="Volume" style="width: 60px; height: auto; margin-bottom: 5px;">
+            <br><br>
+            <p class="fw-bold" style="font-size: 1.2rem; color: #333;">
+                Pression moyenne  <br>
+                <span>{{data.pressureAvr}} Pa</span>
+            </p>
+        </div>
+        <div class="col-2">
+          <img src="assets/pp.png" alt="Volume" style="width: 60px; height: auto; margin-bottom: 5px;">
+          <br><br>
+          <p class="fw-bold" style="font-size: 1.2rem; color: #333;">
+              Précipitations  <br>
+              <span>{{data.precipitations}} l/m <sup>2</sup> </span>
+          </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

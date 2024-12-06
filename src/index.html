@@ -1,13 +1,74 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MeteoProjectWebSemantique</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
+
+  <!doctype html>
+  <html lang="en">
+  
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS for Neumorphism -->
+      <style>
+          body {
+              background-color: #e0e5ec;
+              /* Neumorphic typical light background */
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              /* Clean font */
+          }
+  
+          .neu-form-control {
+              background: #e0e5ec;
+              /* Matching background */
+              border: none;
+              /* No border for neumorphic effect */
+              border-radius: 10px;
+              /* Soft rounded corners */
+              box-shadow:
+                  8px 8px 16px #babecc,
+                  /* Dark shadow */
+                  -8px -8px 16px #ffffff;
+              /* Light highlight */
+              padding: 10px 15px;
+              /* Padding for aesthetics */
+              font-size: 16px;
+              /* Sufficiently large font for readability */
+              width: 100%;
+              /* Full width for better control */
+              box-sizing: border-box;
+              /* Includes padding in width */
+          }
+  
+          .neu-form-group {
+              margin: 30px 0;
+              /* Margin for spacing */
+              display: flex;
+              /* Flexbox for alignment */
+              align-items: center;
+              /* Vertical alignment */
+          }
+  
+          .neu-label {
+              font-size: 18px;
+              /* Larger font size for the label */
+              margin-right: 10px;
+              /* Space between label and input */
+              white-space: nowrap;
+              /* Prevents wrapping */
+          }
+  
+          .neu-container {
+              padding: 20px;
+              /* Padding around the form area */
+              max-width: 600px;
+              /* Maximum width of the form container */
+              margin: auto;
+              /* Centering the container */
+          }
+      </style>
+  </head>
+  
+  <body>
   <app-root></app-root>
 </body>
 </html>

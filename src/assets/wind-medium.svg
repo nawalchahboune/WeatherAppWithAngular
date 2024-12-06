@@ -1,0 +1,80 @@
+<svg xml:space="preserve" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1" preserveAspectRatio="xMidYMid" width="200" height="200">
+  <g class="ldl-scale" style="transform-origin:50px 50px; animation: scalePulse 2s infinite;">
+    <g class="ldl-ani">
+      <g class="ldl-layer">
+        <path
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-width="3.5"
+          stroke="#77a4bd"
+          fill="none"
+          d="M28 61.3c3.2-8.8 10.2-16.1 18.9-19.8 4.4-1.9 9.3-2.9 13.1-5.7 3.2-2.4 5.5-6 6.3-9.9.6-3.2.2-6.6-1.3-9.4s-4.4-5-7.6-5.5c-5.2-.9-10.7 3.4-11.2 8.6-.3 3 1 6.2 3.6 7.7 2.6 1.6 6.3 1 8-1.5s.4-6.5-2.5-7.3"
+          style="animation: strokePulse 2s infinite;"
+        ></path>
+      </g>
+      <g class="ldl-layer">
+        <path
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-width="3.5"
+          stroke="#a0c8d7"
+          fill="none"
+          d="M14.5 89.3c5.2-.8 9.5-4.5 12.5-8.8s4.9-9.2 7.2-13.9 5.1-9.4 9.4-12.4c6.2-4.4 15.1-4.6 21.4-.4 1.4.9 2.7 2 3.6 3.4 1.8 2.7 1.9 6.5.1 9.1-1.8 2.7-5.5 4-8.5 2.8s-4.9-4.8-3.9-7.9c.6-1.9 2.4-3.5 4.4-3.3 2 .1 3.6 2.5 2.6 4.2"
+          style="animation: strokePulse 2s infinite;"
+        ></path>
+      </g>
+      <g class="ldl-layer">
+        <path
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-width="3.5"
+          stroke="#77a4bd"
+          fill="none"
+          d="M60.1 44.6c3.3-1 5.9-3.4 8.2-5.9 2.3-2.5 4.4-5.3 7.1-7.3s6.2-3.5 9.5-2.7c1.7.4 3.2 1.3 4.4 2.6 2 2.3 2.5 5.9.7 8.3-.9 1.3-2.3 2.1-3.8 2.3-1.8.3-3.7-.4-4.7-1.9-1-1.4-.9-3.6.4-4.9.4-.4 1-.6 1.6-.7"
+          style="animation: strokePulse 2s infinite;"
+        ></path>
+      </g>
+      <g class="ldl-layer">
+        <path
+          stroke-miterlimit="10"
+          stroke-linecap="round"
+          stroke-width="3.5"
+          stroke="#a0c8d7"
+          fill="none"
+          d="M27.7 46.5c-2.3 3.3-4.7 6.7-5.4 10.6-.9 4.8.7 9.9-.9 14.5-1.1 3.2-3.8 5.9-7.1 6.4-1.8.3-3.7-.1-5.3-1.1"
+          style="animation: strokePulse 2s infinite;"
+        ></path>
+      </g>
+    </g>
+  </g>
+  <style>
+    /* Animation for the entire SVG scale */
+    @keyframes scalePulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Animation for path strokes */
+    @keyframes strokePulse {
+      0% {
+        stroke-width: 3.5;
+      }
+      50% {
+        stroke-width: 5;
+      }
+      100% {
+        stroke-width: 3.5;
+      }
+    }
+  </style>
+</svg>

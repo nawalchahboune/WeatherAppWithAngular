@@ -1,0 +1,75 @@
+<svg xml:space="preserve" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" id="圖層_1" version="1.1" preserveAspectRatio="xMidYMid" width="200" height="200">
+  <g class="ldl-scale" style="transform-origin:50px 50px; animation: pulse 2s infinite;">
+    <g class="ldl-ani">
+      <g class="ldl-layer">
+        <g class="ldl-ani" style="transform-origin:50px 50px;">
+          <path
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-width="4"
+            stroke="#77a4bd"
+            fill="none"
+            d="M8.5 51.5h62.4c14.8 0 20.6-7.9 20.6-17.5S83.6 16.4 74 16.4s-17.5 7.9-17.5 17.5"
+            style="animation: pathStroke 2s infinite;"
+          ></path>
+        </g>
+      </g>
+      <g class="ldl-layer">
+        <g class="ldl-ani" style="transform-origin:50px 50px;">
+          <path
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-width="4"
+            stroke="#a0c8d7"
+            fill="none"
+            d="M8.5 44.3h25.1c6.7 0 9.3-3.3 9.3-7.3s-3.3-7.3-7.3-7.3c-2.6 0-4.9 1.4-6.2 3.5"
+            style="animation: pathStroke 2s infinite;"
+          ></path>
+        </g>
+      </g>
+      <g class="ldl-layer">
+        <g class="ldl-ani" style="transform-origin:50px 50px;">
+          <path
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-width="4"
+            stroke="#a0c8d7"
+            fill="none"
+            d="M8.5 59h55.2c12 0 15.4 5.5 15.4 12.3s-5.5 12.3-12.3 12.3-12.3-5.5-12.3-12.3"
+            style="animation: pathStroke 2s infinite;"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </g>
+  <style>
+    /* Animation for pulsating scale */
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    /* Animation for stroke width */
+    @keyframes pathStroke {
+      0% {
+        stroke-width: 4;
+      }
+      50% {
+        stroke-width: 6;
+      }
+      100% {
+        stroke-width: 4;
+      }
+    }
+  </style>
+</svg>
