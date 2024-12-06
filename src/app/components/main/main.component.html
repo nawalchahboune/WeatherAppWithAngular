@@ -115,21 +115,32 @@
     </div>
   </div>
 </div> -->
-
-    <div class="neu-container">
-        <div class="neu-form-group">
-            <label for="stationSelect" class="neu-label"><strong>Station:</strong> </label>
-            <select id="stationSelect" class="neu-form-control" (change)="onCategoryChange($event)" style="width: 100px" [(ngModel)]="selectedId">
-              <option *ngFor="let id of stationIds" [value]="id">{{ id }}</option>
-            </select>
-           
-        </div>
+<div>
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <!-- Logo -->
+    <img src="assets/lgo3.png" alt="Temperature" style="width: 150px; height: auto;">
+    
+    <!-- Station Select -->
+    <div style="display: flex; flex-direction: column; align-items: flex-center;">
+      <label for="stationSelect" class="neu-label mx-4 my-2"><strong>Station:</strong> </label>
+      <select id="stationSelect" class="neu-form-control  mx-4" (change)="onCategoryChange($event)" style=" width: 300px" [(ngModel)]="selectedId">
+        <option *ngFor="let id of stationIds" [value]="id">{{ id }}</option>
+      </select>
     </div>
+  </div>
+  
+  
+    
 
 
-    <div class="row d-flex justify-content-center px-2">
-        <div class="col-3">
+    <div class="row d-flex justify-content-center px-2">                
+            
+            
+     
+        <div class="col-4">
             <div class="card text-body shadow-sm" style="border-radius: 20px; background-color: #f9f9f9;">
+              
+
                 <div class="card-body p-4">
                     <div class="d-flex mb-3">
                         <h6 class="flex-grow-1 fw-bold" style="font-size: 1.1rem; color: #333;">Température</h6>
@@ -164,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-3">
+        <div class="col-4">
             <div class="card text-body shadow-sm" style="border-radius: 20px; background-color: #f9f9f9;">
                 <div class="card-body p-4">
                     <div class="d-flex mb-3">

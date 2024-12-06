@@ -23,7 +23,6 @@ let primengComponents = [
   selector: 'app-test-component',
   standalone: true,
   imports: [
-    NgOptimizedImage,
     NgForOf,
     FormsModule,
     ...primengComponents
